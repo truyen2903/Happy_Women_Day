@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#101b18">
-<meta name="description" content="Chúc mừng Ngày Phụ nữ Việt Nam 20/10! Một khu vườn sống động, dành tặng những người phụ nữ.">
+<meta name="description" content="Chúc mừng Ngày Phụ nữ Việt Nam 20/10! Mỗi đóa hoa, một lá thư. Năm lời chúc dịu dàng dành tặng bạn và những người phụ nữ ngày 20/10.">
 <meta property="og:title" content="Vườn thức giấc · Chúc mừng ngày 20/10">
 <meta property="og:description" content="Chúc những người phụ nữ luôn vui vẻ, bình an, hạnh phúc và được yêu thương mỗi ngày.">
 <title>Vườn thức giấc · Chúc mừng Ngày Phụ nữ Việt Nam 20/10</title>
@@ -74,7 +74,7 @@ main{position:relative;z-index:2;pointer-events:none}.chapter{position:relative;
 
 /* AUTOPLAY DIRECTOR: three scenes run by themselves; the visitor never needs to scroll. */
 html.auto-cinema{scroll-behavior:auto!important}
-.auto-playing .skip-intro{opacity:0;visibility:hidden;pointer-events:none}
+.auto-playing .skip-intro{opacity:.75;visibility:visible;pointer-events:auto}
 .auto-playing #touch-layer{opacity:0!important;visibility:hidden!important}
 .at-end .scene-footer .scroll-control{opacity:0;pointer-events:none}
 @media(max-width:700px){
@@ -95,6 +95,26 @@ html.auto-cinema{scroll-behavior:auto!important}
 .cinema-intro .cinema-glow{animation-duration:2.15s}
 .cinema-intro .cinema-horizon{animation-delay:.65s}
 @media(prefers-reduced-motion:reduce){.autoplay-track,.auto-playing .scene-footer .scroll-control svg{animation:none!important;display:none}}
+/* A letter lives inside every flower. All artwork and fonts stay offline. */
+html{scrollbar-gutter:stable}.letter-scroll-lock{overflow:hidden}.intro-active .scene-footer{visibility:hidden}.garden-copy::before{display:none}
+.cinema-final .final-copy h2 span,.cinema-final .final-copy h2 i,.cinema-final .final-wish,.cinema-final .replay-control{animation:none!important;opacity:1;filter:none;transform:none}
+.garden-panel{padding-top:13vh}.garden-copy{max-width:620px}.garden-copy .eyebrow{font-size:9px;letter-spacing:.19em;margin-bottom:19px}.garden-copy h2{font-size:clamp(32px,3.5vw,54px);line-height:1.07}.garden-subtitle{font-size:10px;line-height:1.8;letter-spacing:.025em;color:#bcc3ae;margin:18px 0 0}.discovery-copy{bottom:13.5%;width:min(460px,90vw)}.discovery-copy>span{font-size:19px;white-space:normal}.discovery-copy p{font-size:8px;letter-spacing:.04em;line-height:1.7;margin-top:7px}
+.flower-touch{width:92px;height:92px}.touch-ring{width:19px;height:19px;background:#101b1825;box-shadow:0 0 0 7px #f5e5c10a,0 0 22px #f5e5c10c}.touch-ring::after{margin:6.5px;width:4px;height:4px}.touch-label{display:block;opacity:.85;top:calc(50% + 24px);transform:translate(-50%,0);font-size:10px;letter-spacing:.035em;text-shadow:0 2px 9px #07140b,0 0 18px #07140b;transition:opacity .3s,color .4s}.flower-touch:hover .touch-label,.flower-touch:focus-visible .touch-label{transform:translate(-50%,0);color:#fff3d5}.flower-touch.is-read .touch-ring{border-color:#e9c588;box-shadow:0 0 0 7px #e9c5880a,0 0 27px #e9c58838;background:#e9c58822}.flower-touch.is-read .touch-label::after{content:' ·';color:#e9c588}.in-garden:not(.letter-open):not(.motion-paused) .flower-touch:first-child:not(.is-read) .touch-ring{animation:flowerInvite 3s 1s ease-in-out infinite}
+.light-touch{right:5%;top:22%;font-size:8px;gap:9px}.light-orbit{width:26px;height:26px}.light-orbit::before{width:8px;height:8px}
+.garden-finale{pointer-events:auto;position:absolute;bottom:6.8%;left:50%;transform:translateX(-50%);display:flex;align-items:center;justify-content:center;gap:18px;min-height:46px;padding:12px 24px;border:1px solid #c7ac7d55;border-radius:40px;color:#e7d8b8;background:#132119b3;backdrop-filter:blur(12px);font-size:10px;letter-spacing:.03em;white-space:nowrap;transition:background .3s,border-color .3s}.garden-finale:hover{background:#263326e6;border-color:#c7ac7d}.garden-finale svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.1}.in-garden .scene-footer #continue{visibility:hidden}.at-end .scene-footer #continue{display:none}.scene-nav a{min-width:34px}
+#garden-heart{position:absolute;left:50%;top:61%;width:70px;height:70px;transform:translate(-50%,-50%);opacity:.35;transition:opacity 1.5s,filter 1.5s;pointer-events:none}#garden-heart.awakened{opacity:.86;filter:drop-shadow(0 0 12px #e0be7955)}#garden-heart svg{width:100%;height:100%;overflow:visible}.heart-petal{fill:#c7ac7d05;stroke:#c7ac7d40;stroke-width:.55;transition:fill 1.2s,stroke 1.2s}.heart-petal.received{fill:#dfc58d66;stroke:#ead4a9bf}.heart-core{fill:#c7ac7d;opacity:.55}.heart-caption{position:absolute;top:calc(100% + 4px);left:50%;transform:translateX(-50%);white-space:nowrap;font-family:var(--serif);font-style:italic;font-size:13px;color:#cdbb99;opacity:0;transition:opacity 1.5s}.awakened .heart-caption{opacity:1}
+#story-canvas{position:fixed;inset:0;z-index:9;width:100%;height:100%;pointer-events:none}.artwork{transition:filter .8s,transform 1s}.letter-open .artwork{filter:blur(3px) brightness(.75);transform:scale(1.025)}.letter-open #touch-layer{pointer-events:none}.letter-open #touch-layer>*{pointer-events:none}.letter-open .scene-footer,.letter-open .masthead{opacity:.25;transition:opacity .5s}
+.wish-dialog{border:0;padding:0;background:transparent;color:#26352a;width:min(560px,calc(100vw - 40px));max-width:none;max-height:calc(100dvh - 40px);overflow:visible;outline:none}.wish-dialog::backdrop{background:#07110e88;backdrop-filter:blur(3px);animation:letterBackdrop .65s both}.letter-sheet{position:relative;max-height:calc(100dvh - 40px);overflow:auto;overscroll-behavior:contain;padding:36px 48px 28px;text-align:center;border:1px solid #e5d6b8;background:radial-gradient(ellipse at 15% 0%,#fff6df80,transparent 65%),linear-gradient(135deg,#eee5d2,#f5eddb 52%,#e7dcc4);border-radius:4px 38px 4px 38px;box-shadow:0 35px 110px #020b0a80,inset 0 0 65px #ab875515;transform-origin:center;animation:letterUnfold .85s cubic-bezier(.16,.75,.22,1) both;scrollbar-color:#9a8a64 transparent;scrollbar-width:thin}.letter-sheet::before{content:'';position:absolute;inset:13px;border:1px solid #82735424;border-radius:1px 29px 1px 29px;pointer-events:none}.letter-close{position:absolute;top:17px;right:18px;display:grid;place-items:center;width:44px;height:44px;border-radius:50%;color:#56614b;z-index:2}.letter-close:hover{background:#8b784315}.letter-close svg{width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:1.15}.letter-close:focus-visible,.letter-actions button:focus-visible{outline-color:#536244;outline-offset:3px}.letter-botanical{display:block;width:63px;height:79px;margin:0 auto 13px;fill:none;stroke:#9a8054;stroke-width:.8}.letter-eyebrow{font-size:8px;letter-spacing:.19em;text-transform:uppercase;color:#788066;line-height:1.8;margin:0 0 12px}.letter-sheet h2{font-family:var(--serif);font-weight:400;font-size:clamp(41px,5vw,58px);line-height:1;letter-spacing:-.025em;margin:0;color:#334533}.letter-rule{display:block;width:38px;height:1px;background:#ab9161;margin:22px auto}.letter-body{font-family:var(--serif);font-size:26px;line-height:1.4;text-wrap:pretty;color:#3d4938;margin:0 auto;max-width:430px}.letter-signature{font-family:var(--serif);font-size:17px;font-style:italic;color:#8b7954;margin:24px 0 0}.letter-date{font-size:8px;letter-spacing:.12em;color:#8b8b72;margin:9px 0 26px}.letter-actions{display:flex;align-items:center;justify-content:center;gap:24px;position:relative}.letter-actions button{font-size:10px;min-height:44px;padding:10px 0;display:flex;align-items:center;gap:8px;color:#536147}.letter-actions .letter-return{border-bottom:1px solid #8c805b66}.letter-actions svg{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:1.1}.letter-status{min-height:14px;font-size:9px;line-height:1.5;color:#6f775a;margin:10px 0 0}.letter-save:disabled{opacity:.6}.wish-dialog.instant .letter-sheet,.wish-dialog.instant::backdrop{animation:none}.letter-seed{position:absolute;left:50%;top:50%;width:1px;height:1px;pointer-events:none}
+.final-copy{margin-top:-22px;width:min(660px,89vw)}.final-copy h2{font-size:clamp(120px,13vw,194px);margin:14px 0 15px}.final-wish{font-size:clamp(24px,2.1vw,32px);line-height:1.28;max-width:475px;margin-bottom:24px}.final-actions{pointer-events:auto;display:flex;justify-content:center;align-items:center;gap:25px}.final-actions button{min-height:44px}.save-card-control{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:12px 18px;border:1px solid #c7ac7d55;border-radius:30px;background:#1b2b2080;color:#ddcfb3;font-size:10px}.save-card-control:hover{background:#2b3b2ca0}.save-card-control svg{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:1.2}.card-choice{pointer-events:auto;display:flex;align-items:center;justify-content:center;gap:9px;font-size:9px;color:#aeb59e;margin:20px 0 0}.card-choice select{font:inherit;min-height:36px;background:#18271e;color:#dfcfaf;border:1px solid #c7ac7d33;border-radius:18px;padding:5px 28px 5px 12px;max-width:165px}.card-choice select:focus-visible{outline:1px solid #dfcfaf;outline-offset:4px}.card-status{font-size:9px;min-height:16px;margin:8px 0 0;color:#bbc4aa}.final-footnote{bottom:10%;font-size:9px}.cinema-final .final-copy h2 span,.cinema-final .final-copy h2 i{animation-delay:1.7s}.cinema-final .final-wish{animation-delay:2.05s}.cinema-final .replay-control{animation-delay:2.3s}.final-panel::before{background:radial-gradient(ellipse 40% 45% at 50% 49%,#0a140eb0,transparent 95%)}
+.motion-paused *, .motion-paused *::before,.motion-paused *::after{animation-play-state:paused!important}.motion-paused .letter-sheet{animation:none!important}.motion-paused .artwork{transition:none}
+@keyframes flowerInvite{0%,100%{box-shadow:0 0 0 6px #f5e5c10a,0 0 22px #f5e5c10c}50%{box-shadow:0 0 0 13px #f5e5c103,0 0 28px #f5e5c133}}
+@keyframes letterBackdrop{from{background:#07110e00;backdrop-filter:blur(0)}to{background:#07110e88;backdrop-filter:blur(3px)}}
+@keyframes letterUnfold{0%{opacity:0;transform:translate(var(--flight-x,0),var(--flight-y,0)) scale(.055) rotate(-32deg);border-radius:100% 0 100% 0;filter:brightness(1.5)}35%{opacity:1;filter:brightness(1.07)}100%{opacity:1;transform:none;border-radius:4px 38px 4px 38px;filter:none}}
+@media(max-width:700px){.garden-panel{padding-top:max(112px,13svh)}.garden-copy .eyebrow{font-size:7px;letter-spacing:.14em;margin-bottom:14px}.garden-copy h2{font-size:clamp(29px,8vw,39px);line-height:1.07}.garden-subtitle{font-size:8px;margin-top:12px}.flower-touch{width:74px;height:74px}.touch-ring{width:18px;height:18px}.touch-ring::after{margin:6px}.touch-label{font-size:9px;top:calc(50% + 21px)}.light-touch{left:auto;right:20px;top:calc(50% + 44px);font-size:7px;gap:7px;padding:8px}.light-orbit{width:21px;height:21px}.light-orbit::after{inset:-4px 6px}.light-touch>span:last-child{display:none}.discovery-copy{bottom:17%;width:90vw}.discovery-copy>span{font-size:16px}.discovery-copy p{font-size:7px;margin-top:5px}.garden-finale{bottom:calc(10.4% + env(safe-area-inset-bottom,0px));font-size:9px;min-height:44px;padding:11px 19px;gap:12px}#garden-heart{top:70%;width:49px;height:49px}.heart-caption{font-size:10px;top:calc(100% - 2px)}.in-garden .scene-footer{padding-top:8px}.in-garden .scene-footer #continue{display:none}.scene-footer{z-index:15}.wish-dialog{width:calc(100vw - 28px);max-height:calc(100dvh - 24px)}.letter-sheet{max-height:calc(100dvh - 24px);padding:28px 28px 19px;border-radius:3px 30px 3px 30px}.letter-sheet::before{inset:10px;border-radius:0 23px 0 23px}.letter-close{top:12px;right:11px}.letter-botanical{width:48px;height:60px;margin-bottom:10px}.letter-eyebrow{font-size:7px;margin-bottom:11px}.letter-sheet h2{font-size:43px}.letter-rule{margin:19px auto}.letter-body{font-size:23px;line-height:1.38}.letter-signature{font-size:16px;margin-top:19px}.letter-date{font-size:7px;margin-bottom:15px}.letter-actions{gap:21px}.letter-actions button{font-size:9px}.letter-status{font-size:8px;margin-top:6px}.final-copy{margin-top:-16px;width:100%}.final-copy h2{font-size:clamp(105px,28vw,168px);margin:14px 0 17px}.final-copy .eyebrow{font-size:7px;letter-spacing:.12em}.final-wish{font-size:25px;max-width:330px;margin-bottom:21px}.final-actions{gap:17px}.save-card-control{font-size:9px;padding:10px 14px}.card-choice{font-size:8px;margin-top:14px}.card-choice select{max-width:142px}.card-status{font-size:8px}.final-actions .replay-control{font-size:9px}.at-end .scene-footer{padding-top:0}.final-footnote{display:none}}
+@media(max-height:690px){.garden-panel{padding-top:105px}.garden-copy .eyebrow{margin-bottom:10px}.garden-copy h2{font-size:30px}.garden-subtitle{margin-top:9px}.letter-botanical{width:36px;height:45px}.letter-sheet{padding-top:23px;padding-bottom:14px}.letter-body{font-size:21px;line-height:1.35}.letter-sheet h2{font-size:39px}.letter-rule{margin:15px auto}.letter-signature{margin-top:15px}.letter-date{margin-bottom:9px}.letter-eyebrow{font-size:7px}.final-copy h2{font-size:100px;margin:6px 0 12px}.final-wish{font-size:23px;margin-bottom:13px}.card-choice{margin-top:10px}.card-status{margin-top:2px}.final-actions{gap:15px}.discovery-copy{bottom:16.5%}#garden-heart{top:70%}.heart-caption{display:none}}
+@media(max-height:520px) and (min-width:701px){.garden-panel{padding-top:80px}.garden-copy h2{font-size:27px}.garden-copy .eyebrow{font-size:7px;margin-bottom:8px}.garden-subtitle{display:none}.discovery-copy{display:none}.garden-finale{bottom:13%;left:50%}.final-copy h2{font-size:80px}.final-copy .eyebrow{font-size:7px}.final-wish{font-size:22px;max-width:480px;margin-bottom:8px}.card-choice{margin-top:5px}.final-footnote{display:none}#garden-heart{top:64%;width:45px;height:45px}}
+@media(prefers-reduced-motion:reduce){.wish-dialog .letter-sheet,.wish-dialog::backdrop{animation:none!important}.letter-open .artwork{transform:none;filter:brightness(.7)}.artwork{transition:none}#story-canvas{display:none}.cinema-final .final-copy h2 span,.cinema-final .final-copy h2 i,.cinema-final .final-wish,.cinema-final .replay-control{opacity:1!important}}
+
 </style>
 </head>
 <body>
@@ -120,7 +140,7 @@ html.auto-cinema{scroll-behavior:auto!important}
     </button>
   </div>
 </header>
-<div class="intro-caption" aria-hidden="true"><span>Một khu vườn đang thức giấc</span><i></i></div>
+<div class="intro-caption" aria-hidden="true"><span>Có những lời chúc đang chờ bạn mở</span><i></i></div>
 <main>
   <section id="thuc-giac" class="chapter chapter-one" aria-labelledby="opening-title">
     <div class="panel opening-panel">
@@ -135,10 +155,11 @@ html.auto-cinema{scroll-behavior:auto!important}
   <section id="loi-chuc" class="chapter chapter-two" aria-labelledby="wish-title">
     <div class="panel garden-panel">
       <div class="garden-copy">
-        <p class="eyebrow">Một chút bình yên, gửi đến bạn</p>
-        <h2 id="wish-title">Chúc những người phụ nữ luôn <em>vui vẻ, bình an, hạnh phúc</em> và được yêu thương mỗi ngày.</h2>
+        <p class="eyebrow">Mỗi đóa hoa, một lá thư</p>
+        <h2 id="wish-title">Chạm một đóa hoa,<br><em>mở một điều dịu dàng.</em></h2>
+        <p class="garden-subtitle">Năm lời chúc, dành tặng bạn ngày 20/10.</p>
       </div>
-      <div class="discovery-copy"><span id="discovery-word" aria-live="polite" aria-atomic="true">Vui vẻ. Bình an. Được yêu thương.</span><p>Những điều giản dị dành cho bạn</p></div>
+      <div class="discovery-copy"><span id="discovery-word" aria-live="polite" aria-atomic="true">Bạn muốn mở điều gì hôm nay?</span><p>Chọn một đóa hoa và đọc theo nhịp của bạn.</p></div>
     </div>
   </section>
   <section id="no-hoa" class="chapter chapter-three" aria-labelledby="final-title">
@@ -146,25 +167,55 @@ html.auto-cinema{scroll-behavior:auto!important}
       <div class="final-copy">
         <p class="eyebrow">Chúc mừng Ngày Phụ nữ Việt Nam</p>
         <h2 id="final-title" aria-label="20 tháng 10"><span>20</span><i aria-hidden="true">/</i><span>10</span></h2>
-        <p class="final-wish">Mong rằng hôm nay và mỗi ngày đều có thật nhiều điều tốt đẹp đến với bạn.</p>
-        <button id="replay" class="replay-control"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 7a8 8 0 1 1-1 9M5 2v5h5"/></svg><span>Xem lại từ đầu</span></button>
+        <p class="final-wish">Mong bạn luôn được yêu thương, được trân trọng và tự do nở rộ theo cách của mình.</p>
+        <div class="final-actions">
+          <button id="replay" class="replay-control" tabindex="-1"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 7a8 8 0 1 1-1 9M5 2v5h5"/></svg><span>Trở lại khu vườn</span></button>
+          <button id="save-card" class="save-card-control" tabindex="-1"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m-4-4 4 4 4-4M5 16v5h14v-5"/></svg>Lưu thiệp chúc</button>
+        </div>
+        <label class="card-choice" for="card-choice">Lời chúc mang theo <select id="card-choice" tabindex="-1"><option value="0">Bình an</option><option value="1">Niềm vui</option><option value="2">Yêu thương</option><option value="3">Tự do</option><option value="4">Ước mơ</option></select></label>
+        <p class="card-status" id="card-status" role="status"></p>
       </div>
       <p class="final-footnote">Dành cho bạn. Và tất cả những người phụ nữ.</p>
     </div>
   </section>
 </main>
 <div class="cinema" id="cinema" aria-hidden="true"><canvas id="cinema-canvas"></canvas><div class="cinema-veil"></div><div class="cinema-glow"></div><div class="cinema-horizon"></div><div class="cinema-iris"></div></div>
-<div id="touch-layer">
-  <button class="flower-touch" data-flower="0" aria-label="Chạm đóa hoa thứ nhất: Vui vẻ" tabindex="-1"><span class="touch-ring" aria-hidden="true"></span><span class="touch-label">Chạm để nở</span></button>
-  <button class="flower-touch" data-flower="1" aria-label="Chạm đóa hoa thứ hai: Bình an" tabindex="-1"><span class="touch-ring" aria-hidden="true"></span><span class="touch-label">Chạm để nở</span></button>
-  <button class="flower-touch" data-flower="2" aria-label="Chạm đóa hoa thứ ba: Được yêu thương" tabindex="-1"><span class="touch-ring" aria-hidden="true"></span><span class="touch-label">Chạm để nở</span></button>
+<div id="touch-layer" inert>
+  <div id="garden-heart" aria-hidden="true"><svg viewBox="0 0 100 100"><path class="heart-petal" data-petal="0" transform="rotate(0 50 50)" d="M50 51C28 35 31 12 50 5C69 12 72 35 50 51Z"/>
+<path class="heart-petal" data-petal="1" transform="rotate(72 50 50)" d="M50 51C28 35 31 12 50 5C69 12 72 35 50 51Z"/>
+<path class="heart-petal" data-petal="2" transform="rotate(144 50 50)" d="M50 51C28 35 31 12 50 5C69 12 72 35 50 51Z"/>
+<path class="heart-petal" data-petal="3" transform="rotate(216 50 50)" d="M50 51C28 35 31 12 50 5C69 12 72 35 50 51Z"/>
+<path class="heart-petal" data-petal="4" transform="rotate(288 50 50)" d="M50 51C28 35 31 12 50 5C69 12 72 35 50 51Z"/><circle class="heart-core" cx="50" cy="50" r="3"/></svg><span class="heart-caption">Những điều ở lại</span></div>
+  <button class="flower-touch" data-flower="0" aria-label="Mở thư Bình an" aria-haspopup="dialog" aria-controls="wish-dialog" tabindex="-1"><span class="touch-ring" aria-hidden="true"></span><span class="touch-label">Bình an</span></button>
+  <button class="flower-touch" data-flower="1" aria-label="Mở thư Niềm vui" aria-haspopup="dialog" aria-controls="wish-dialog" tabindex="-1"><span class="touch-ring" aria-hidden="true"></span><span class="touch-label">Niềm vui</span></button>
+  <button class="flower-touch" data-flower="2" aria-label="Mở thư Yêu thương" aria-haspopup="dialog" aria-controls="wish-dialog" tabindex="-1"><span class="touch-ring" aria-hidden="true"></span><span class="touch-label">Yêu thương</span></button>
+  <button class="flower-touch" data-flower="3" aria-label="Mở thư Tự do" aria-haspopup="dialog" aria-controls="wish-dialog" tabindex="-1"><span class="touch-ring" aria-hidden="true"></span><span class="touch-label">Tự do</span></button>
+  <button class="flower-touch" data-flower="4" aria-label="Mở thư Ước mơ" aria-haspopup="dialog" aria-controls="wish-dialog" tabindex="-1"><span class="touch-ring" aria-hidden="true"></span><span class="touch-label">Ước mơ</span></button>
   <button class="light-touch" id="light-toggle" aria-label="Đổi ánh sáng khu vườn sang nắng ấm" aria-pressed="false" tabindex="-1"><span class="light-orbit" aria-hidden="true"></span><span>Chạm ánh sáng</span></button>
+  <button class="garden-finale" id="bloom-garden" tabindex="-1">Để khu vườn nở rộ<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15m-5-5 5 5-5 5"/></svg></button>
 </div>
 <footer class="scene-footer">
   <div class="scene-index"><span id="scene-number">01</span><i></i><span id="scene-name">Thức giấc</span></div>
   <button id="continue" class="scroll-control"><span id="continue-label">Cuộn để bước vào khu vườn</span><svg viewBox="0 0 20 28" aria-hidden="true"><path d="M10 2v23m-6-6 6 6 6-6"/></svg></button>
   <nav class="scene-nav" aria-label="Các phần của khu vườn"><a href="#thuc-giac" aria-label="Phần 1: Thức giấc" aria-current="step">01</a><a href="#loi-chuc" aria-label="Phần 2: Khu vườn">02</a><a href="#no-hoa" aria-label="Phần 3: Nở hoa">03</a></nav>
 </footer>
+<canvas id="story-canvas" aria-hidden="true"></canvas>
+<dialog class="wish-dialog" id="wish-dialog" aria-labelledby="letter-title" aria-describedby="letter-text">
+  <article class="letter-sheet">
+    <button class="letter-close" id="letter-close" aria-label="Khép thư và trở về khu vườn" autofocus><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button>
+    <svg class="letter-botanical" viewBox="0 0 80 100" aria-hidden="true"><path d="M40 96V50C18 57 8 26 23 28C34 29 40 47 40 50C40 35 29 15 40 6C51 15 40 35 40 50C46 30 60 20 65 29C72 44 52 55 40 50M40 78C23 77 18 67 17 63C29 64 36 68 40 78M40 88C54 85 61 72 61 66C49 70 42 77 40 88M40 50C26 44 25 22 31 17M40 50C49 45 54 31 52 20"/><path d="M32 54q8 5 16 0M39 95h2"/></svg>
+    <p class="letter-eyebrow">Một lá thư từ khu vườn · 20/10</p>
+    <h2 id="letter-title"></h2><span class="letter-rule" aria-hidden="true"></span>
+    <p class="letter-body" id="letter-text"></p>
+    <p class="letter-signature" id="letter-signature"></p>
+    <p class="letter-date">Dành tặng bạn và những người phụ nữ</p>
+    <div class="letter-actions">
+      <button class="letter-return" id="letter-return">Về khu vườn <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15m-5-5 5 5-5 5"/></svg></button>
+      <button class="letter-save" id="letter-save"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m-4-4 4 4 4-4M5 16v5h14v-5"/></svg>Lưu lời chúc</button>
+    </div>
+    <p class="letter-status" id="letter-status" role="status"></p>
+  </article>
+</dialog>
 <div class="autoplay-track" aria-hidden="true"></div>
 <div id="announcement" class="sr-only" role="status" aria-live="polite"></div>
 <noscript><style>.opening-copy .reveal{opacity:1;transform:none;filter:none}.garden-panel,.final-panel{opacity:1}.intro-caption,.top-controls,.scene-footer,#touch-layer,.botanical-note{display:none}body{background:#101b18}.panel{position:relative;min-height:100svh}.chapter{height:auto}.opening-copy{max-width:650px}.final-copy{opacity:1;transform:none}</style></noscript>
@@ -191,7 +242,7 @@ function random(){seed=(Math.imul(1664525,seed)+1013904223)>>>0;return seed/4294
 let W=innerWidth,H=innerHeight, mobile=W<=700, reduced=motionQuery.matches,paused=false,disposed=false,raf=0,last=0,time=0,introTime=0;
 let targetScroll=scrollY,scroll=scrollY,gardenStart=0,finalStart=0,frameCount=0,measureTime=0,slowFrames=0,qualityCooldown=0;
 let gardenBlend=0,finalBlend=0,sceneIndex=-1,finalStarted=false,finalTime=0,replayRunning=false,contextLost=false;
-// A deterministic director runs an entire 12-second mini-film after page load.
+// A short opening leads into an unhurried, interactive garden.
 // User navigation always takes precedence. Audio stays gesture-gated by browsers.
 let autoPlaying=false,autoClock=0,autoBloomed=false,autoLastTop=0;
 let light=0,lightTarget=0,pointer={x:0,y:0,tx:0,ty:0,vx:0,vy:0,lastX:0,lastY:0,active:false},lastPointerTime=0;
@@ -462,9 +513,11 @@ function compose(dt){
  const finale=still?1:clamp(finalTime/3.8),gather=1-smooth((finale-.05)/.85);
  const pX=still?0:pointer.x,pY=still?0:pointer.y;
  const mainStart=mobile?[.63,.66,1.1]:[.737,.47,.7];
- const gardenLayout=mobile?[[.30,.57,1.1,.66],[.72,.67,.1,.51],[.79,.48,-1.8,.43],[.10,.83,-1.8,.53],[.91,.89,-3,.62],[.12,.43,-5,.37],[.89,.29,-6,.3],[.47,.85,-4,.43],[.04,.23,-8,.32]]:[[.29,.61,1.0,.80],[.73,.69,.5,.72],[.69,.42,-1.8,.62],[.10,.89,-.3,.90],[.92,.88,-1.2,.95],[.09,.45,-5,.63],[.91,.30,-5,.55],[.48,.96,-4,.60],[.38,.49,-7,.34]];
+ const gardenLayout=mobile?[[.25,.43,1.1,.49],[.76,.44,.1,.47],[.50,.57,-1.8,.44],[.19,.70,-1.8,.43],[.82,.71,-3,.46],[.04,.96,-5,.36],[.97,.28,-6,.24],[.49,.98,-4,.4],[.03,.27,-8,.27]]:[[.26,.50,1.0,.73],[.75,.51,.5,.68],[.51,.39,-1.8,.51],[.17,.72,-.3,.64],[.84,.74,-1.2,.69],[.04,.40,-5,.47],[.96,.28,-5,.40],[.48,.98,-4,.52],[.07,.97,-7,.48]];
+ if(H<520&&W>700){const short=[[.25,.52,1,.68],[.75,.52,.5,.68],[.5,.55,-1.8,.54],[.15,.75,-.3,.62],[.85,.75,-1.2,.62]];for(let i=0;i<5;i++)gardenLayout[i]=short[i];}
  const finalLayout=mobile?[[.01,.28,.5,.55],[1.03,.68,.3,.56],[.79,.18,-1.5,.48],[-.02,.73,-.6,.46],[.52,.86,-1,.52],[.33,.18,-2.2,.38],[1.03,.40,-2.3,.43],[.22,.86,-2,.35],[.79,.86,-3,.37]]:[[.23,.39,.2,.81],[.78,.63,.5,.91],[.65,.18,-1.5,.65],[.28,.78,-.3,.76],[.49,.91,-1.5,.65],[.35,.18,-2,.52],[.82,.30,-1.8,.66],[.16,.62,-2,.50],[.68,.86,-2,.60]];
  const heightScale=mobile?Math.min(H/820,1.12):Math.min(H/900,1.2);
+ flowerFocus=damp(flowerFocus,activeWish>=0?1:0,5,dt);
  for(const flower of flowers){const i=flower.i,d=gardenLayout[i],end=finalLayout[i];
   let start;if(i===0)start=[mainStart[0],mainStart[1],mainStart[2],mobile?1.13:1.72];else{const ambient=mobile?[[.95,.95,-2,.65],[.95,.47,-5,.30],[.03,1.05,-3,.70],[1.1,.73,-1,.55],[.52,.98,-6,.4],[.91,.34,-7,.15],[.2,.9,-7,.28],[-.12,.56,-9,.3]]:[[.95,.95,-2,.65],[.93,.19,-5,.38],[.03,1.02,-3,.85],[1.08,.55,-1,.65],[.6,.99,-6,.4],[.63,.07,-7,.28],[.20,.9,-7,.38],[.12,.21,-9,.33]];start=ambient[i-1];}
   let nx=mix(start[0],d[0],g),ny=mix(start[1],d[1],g),z=mix(start[2],d[2],g),s=mix(start[3],d[3],g);
@@ -481,14 +534,16 @@ function compose(dt){
   flower.energy=damp(flower.energy,0,1.9,dt);
   const springTarget=flower.energy*.10+near*.04;
   if(!still){flower.velocity+=(springTarget-flower.spring)*50*dt;flower.velocity*=Math.exp(-8*dt);flower.spring+=flower.velocity*dt;}else{flower.spring=0;flower.velocity=0;}
-  flower.position=pos;flower.scale=s*heightScale;
+  flower.position=pos;flower.scale=s*heightScale*(i===activeWish?1+flowerFocus*.13:1);
   flower.rotation=[-.20+Math.sin(i*1.4)*.27+pY*.06+flower.spring*.5,.16*Math.sin(i)+pX*.07+near*dx*.00012,Math.sin(t*.28+i)*.022+flower.spring+i*.46];
   flower.bloom=i===0?mix(bloomIntro,1,g):mix(.95,1,g);
   flower.bloom=clamp(flower.bloom+flower.spring,.02,1.15);
+  if(f>.05)flower.bloom=mix(flower.bloom,.24+.76*(still?1:smooth((finalTime-1.1-i*.07)/1.6)),f);
   flower.scatter=(i===0?introGather*(1-g):0)+f*gather*(.62+i*.025);
   flower.opacity=i===0?1:mix(ease((introTime-1.4)/3.2)*.50,1,g);
   if(still)flower.opacity=i===0?1:mix(.5,1,g);
   if(f>0)flower.opacity*=mix(1,.35+.65*ease(finale*2),f);
+  if(activeWish>=0&&i!==activeWish)flower.opacity*=1-flowerFocus*.35;
   if(low&&i>6)flower.opacity*=.7;
   flower.screen=project(flower.position);
  }
@@ -503,7 +558,8 @@ function stopAuto(){
 }
 function restartAuto(){
  stopAuto();
- if(paused){paused=false;const b=$('#motion-toggle');b.setAttribute('aria-pressed','false');b.setAttribute('aria-label','Tạm dừng chuyển động');b.title='Tạm dừng chuyển động';}
+ if(wishDialog.open)finishLetter();clearStory();
+ if(paused){paused=false;root.classList.remove('motion-paused');const b=$('#motion-toggle');b.setAttribute('aria-pressed','false');b.setAttribute('aria-label','Tạm dừng chuyển động');b.title='Tạm dừng chuyển động';}
  root.classList.remove('cinema-final','cinema-intro','final-visible','intro-over','title-ready','in-garden','at-end');
  root.classList.add('intro-active');
  replayRunning=false;replayButton.disabled=false;finalStarted=false;finalTime=0;
@@ -518,37 +574,20 @@ function restartAuto(){
  document.documentElement.classList.toggle('auto-cinema',autoPlaying);
  progressTrack.style.setProperty('--show-progress','0');
  if(autoPlaying){igniteCinema('intro');$('#announcement').textContent='Khu vườn tự động thức giấc.';}
- else {skipIntro();window.scrollTo({top:Math.min(finalStart+H*.2,document.documentElement.scrollHeight-H),behavior:'instant'});targetScroll=scrollY;}
+ else {skipIntro();window.scrollTo({top:Math.min(gardenStart+H*.10,document.documentElement.scrollHeight-H),behavior:'instant'});targetScroll=scrollY;}
  last=0;invalidate();
 }
 function driveAuto(rawDt){
  if(!autoPlaying||paused||reduced)return;
- autoClock+=Math.min(Math.max(0,rawDt),.10);
- const t=autoClock;
+ autoClock+=Math.min(Math.max(0,rawDt),.10);const t=autoClock;
  const gardenStop=Math.min(gardenStart+H*.10,document.documentElement.scrollHeight-H);
- const finalStop=Math.min(finalStart+H*.17,document.documentElement.scrollHeight-H);
- let top=0;
- // 0-2.7s: a flower ignites; 2.7-4.7s: journey to the garden.
- // 4.7-6.5s: the short universal wish; 6.5-8.5s: the 20/10 finale.
- if(t>2.7&&t<4.7)top=gardenStop*smooth((t-2.7)/2);
- else if(t>=4.7&&t<=6.5)top=gardenStop;
- else if(t>6.5&&t<8.5)top=mix(gardenStop,finalStop,smooth((t-6.5)/2));
- else if(t>=8.5)top=finalStop;
- const snapped=Math.round(top);
+ const top=t<2.7?0:gardenStop*smooth((t-2.7)/2.1),snapped=Math.round(top);
  if(snapped!==autoLastTop){autoLastTop=snapped;window.scrollTo({top:snapped,behavior:'instant'});}
- targetScroll=top;
- progressTrack.style.setProperty('--show-progress',String(clamp(t/12)));
- if(t>=4.65&&!autoBloomed){
-  autoBloomed=true;lightTarget=1;
-  for(let i=0;i<Math.min(3,flowers.length);i++){flowers[i].energy=.95;burst(flowers[i],quality>1?17:11);}
- }
- if(t>=12){
-  stopAuto();
-  $('#continue-label').textContent='Xem lại hành trình';
-  $('#announcement').textContent='Chúc mừng ngày Phụ nữ Việt Nam 20/10.';
- }
+ targetScroll=top;progressTrack.style.setProperty('--show-progress',String(clamp(t/5.2)));
+ if(t>=4.75&&!autoBloomed){autoBloomed=true;flowers[0].energy=.8;}
+ if(t>=5.2){stopAuto();$('#continue-label').textContent='Để khu vườn nở rộ';$('#announcement').textContent='Mỗi đóa hoa giữ một lá thư. Chọn một đóa để khám phá.';}
 }
-function updateScene(dt){scroll=damp(scroll,targetScroll,12,dt);if(reduced||paused||Math.abs(scroll-targetScroll)<.1)scroll=targetScroll;
+function updateScene(dt,elapsed=dt){scroll=damp(scroll,targetScroll,12,dt);if(reduced||paused||Math.abs(scroll-targetScroll)<.1)scroll=targetScroll;
  gardenBlend=smooth((scroll-gardenStart+H*.78)/(H*.83));
  finalBlend=smooth((scroll-finalStart+H*.78)/(H*.83));
  const firstOpacity=1-smooth((scroll-gardenStart+H*.85)/(H*.52));
@@ -556,28 +595,387 @@ function updateScene(dt){scroll=damp(scroll,targetScroll,12,dt);if(reduced||paus
  const thirdOpacity=smooth((scroll-finalStart+H*.58)/(H*.53));
  openingPanel.style.opacity=firstOpacity.toFixed(3);gardenPanel.style.opacity=secondOpacity.toFixed(3);finalPanel.style.opacity=thirdOpacity.toFixed(3);
  const current=finalBlend>.60?2:gardenBlend>.60?1:0;
- if(sceneIndex!==current){sceneIndex=current;root.classList.toggle('in-garden',current===1);root.classList.toggle('at-end',current===2);$('#scene-number').textContent='0'+(current+1);$('#scene-name').textContent=['Thức giấc','Khu vườn','Nở hoa'][current];$('#continue-label').textContent=autoPlaying?'Đang tự trình chiếu…':['Tiếp tục đến khu vườn','Xem màn kết','Xem lại hành trình'][current];sceneLinks.forEach((a,i)=>{if(i===current)a.setAttribute('aria-current','step');else a.removeAttribute('aria-current');});bloomButtons.forEach(b=>b.tabIndex=current===1?0:-1);$('#light-toggle').tabIndex=current===1?0:-1;replayButton.tabIndex=current===2?0:-1;}
- if(finalBlend>.61&&!finalStarted){finalStarted=true;finalTime=0;igniteCinema('final');audio.chime(352,4);}
+ if(sceneIndex!==current){sceneIndex=current;root.classList.toggle('in-garden',current===1);root.classList.toggle('at-end',current===2);$('#scene-number').textContent='0'+(current+1);$('#scene-name').textContent=['Thức giấc','Khu vườn','Nở hoa'][current];$('#continue-label').textContent=autoPlaying?'Đang tự trình chiếu…':['Tiếp tục đến khu vườn','Để khu vườn nở rộ','Trở lại khu vườn'][current];sceneLinks.forEach((a,i)=>{if(i===current)a.setAttribute('aria-current','step');else a.removeAttribute('aria-current');});bloomButtons.forEach(b=>b.tabIndex=current===1?0:-1);$('#light-toggle').tabIndex=current===1?0:-1;$('#bloom-garden').tabIndex=current===1?0:-1;$('#touch-layer').inert=current!==1;replayButton.tabIndex=current===2?0:-1;$('#save-card').tabIndex=current===2?0:-1;cardChoice.tabIndex=current===2?0:-1;[openingPanel,gardenPanel,finalPanel].forEach((p,i)=>{p.inert=i!==current;p.setAttribute('aria-hidden',String(i!==current));});}
+ if(finalBlend>.61&&!finalStarted){finalStarted=true;finalTime=0;startStoryFinale();}
  if(finalBlend<.10&&finalStarted){finalStarted=false;finalTime=0;replayRunning=false;replayButton.disabled=false;root.classList.remove('final-visible','cinema-final');if(cinemaImpact?.kind==='final')clearCinema();}
- if(finalStarted){finalTime+=dt;const show=reduced||paused||finalTime>.77;root.classList.toggle('final-visible',show);if(replayRunning&&finalTime>=3.8){replayRunning=false;replayButton.disabled=false;$('#announcement').textContent='Khu vườn đã nở hoa.';}}
+ if(finalStarted){finalTime+=Math.min(elapsed,.15);if(!finaleIgnited&&(reduced||paused||finalTime>1.3)){finaleIgnited=true;igniteCinema('final');audio.chime(352,4);}const show=reduced||paused||finalTime>1.8;root.classList.toggle('final-visible',show);if(replayRunning&&finalTime>=3.8){replayRunning=false;replayButton.disabled=false;$('#announcement').textContent='Khu vườn đã nở hoa.';}}
+ const finalReady=current===2&&root.classList.contains('final-visible');finalPanel.inert=!finalReady;finalPanel.setAttribute('aria-hidden',String(!finalReady));replayButton.tabIndex=finalReady?0:-1;$('#save-card').tabIndex=finalReady?0:-1;cardChoice.tabIndex=finalReady?0:-1;
  if(introTime>1.45||reduced||paused){root.classList.add('title-ready');}
  if(introTime>=4.6||reduced||paused){root.classList.add('intro-over');root.classList.remove('intro-active');$('#skip-intro').tabIndex=-1;}
 }
 function skipIntro(){if(cinemaImpact?.kind==='intro')clearCinema();root.classList.remove('cinema-intro');introTime=5;root.classList.add('intro-over','title-ready');root.classList.remove('intro-active');$('#skip-intro').tabIndex=-1;invalidate();}
-function goTo(index){stopAuto();skipIntro();const el=$(['#thuc-giac','#loi-chuc','#no-hoa'][index]);window.scrollTo({top:Math.min(el.offsetTop,document.documentElement.scrollHeight-H),behavior:reduced||paused?'instant':'smooth'});}
+function goTo(index){if(wishDialog.open)finishLetter();if(index!==1)clearStory();stopAuto();skipIntro();if(index===1)gardenPanel.inert=false;const el=$(['#thuc-giac','#loi-chuc','#no-hoa'][index]);window.scrollTo({top:Math.min(el.offsetTop,document.documentElement.scrollHeight-H),behavior:reduced||paused?'instant':'smooth'});}
 function resizeCanvas(){const dpr=Math.min(devicePixelRatio||1,quality===0?1:quality===1?1.25:1.7);canvas.width=Math.round(W*dpr);canvas.height=Math.round(H*dpr);fallbackCanvas.width=Math.round(W*Math.min(dpr,1.5));fallbackCanvas.height=Math.round(H*Math.min(dpr,1.5));}
-function resize(){W=innerWidth;H=innerHeight;mobile=W<=700;projection=perspective(.68,W/H,.1,50);view=model(0,0,-12.2,1);vp=multiply(projection,view);gardenStart=$('#loi-chuc').offsetTop;finalStart=$('#no-hoa').offsetTop;targetScroll=scrollY;resizeCanvas();sizeCinema();invalidate();}
+function resize(){W=innerWidth;H=innerHeight;mobile=W<=700;projection=perspective(.68,W/H,.1,50);view=model(0,0,-12.2,1);vp=multiply(projection,view);gardenStart=$('#loi-chuc').offsetTop;finalStart=$('#no-hoa').offsetTop;targetScroll=scrollY;resizeCanvas();sizeCinema();sizeStory();invalidate();}
 function renderFrame(now){raf=0;if(disposed||document.hidden)return;const rawDt=last?(now-last)/1000:1/60;const dt=Math.min(.033,Math.max(.001,rawDt));last=now;
  if(!paused&&!reduced){time+=dt;introTime+=Math.min(rawDt,.25);}else if(reduced) introTime=Math.max(introTime,5);
- driveAuto(rawDt);updateScene(dt);pointer.x=damp(pointer.x,pointer.tx,4,dt);pointer.y=damp(pointer.y,pointer.ty,4,dt);pointer.vx=damp(pointer.vx,0,5,dt);pointer.vy=damp(pointer.vy,0,5,dt);light=damp(light,lightTarget,2,dt);if(reduced||paused)light=lightTarget;
+ driveAuto(rawDt);updateScene(dt,rawDt);pointer.x=damp(pointer.x,pointer.tx,4,dt);pointer.y=damp(pointer.y,pointer.ty,4,dt);pointer.vx=damp(pointer.vx,0,5,dt);pointer.vy=damp(pointer.vy,0,5,dt);light=damp(light,lightTarget,2,dt);if(reduced||paused)light=lightTarget;
  if(!reduced&&!paused)updateParticles(dt);compose(dt);
- if(contextLost)fallback?.render();else gpu?.render();renderCinema(dt);
+ if(contextLost)fallback?.render();else gpu?.render();renderCinema(Math.min(rawDt,.1));renderStory(Math.min(rawDt,.1));
  // Adapt only after a sustained frame budget miss; never allocate unbounded effects.
  if(!paused&&!reduced&&introTime>5&&quality>0){measureTime+=rawDt;frameCount++;if(rawDt>.027)slowFrames++;if(frameCount>=90){if(slowFrames>45&&now>qualityCooldown){quality--;resizeCanvas();qualityCooldown=now+12000;}frameCount=0;slowFrames=0;measureTime=0;}}
- const transient=(!reduced&&!paused)||!!cinemaImpact||Math.abs(scroll-targetScroll)>.1||Math.abs(light-lightTarget)>.005;
+ const transient=(!reduced&&!paused)||!!cinemaImpact||!!returnPetal||!!storyEffect||(finalStarted&&finalTime<6)||Math.abs(scroll-targetScroll)>.1||Math.abs(light-lightTarget)>.005;
  if(transient)raf=requestAnimationFrame(renderFrame);
 }
 function invalidate(){if(!raf&&!disposed&&!document.hidden)raf=requestAnimationFrame(renderFrame);}
+
+async function downloadWishCard(wish) {
+  const cardTitle = String(wish && wish.title || 'Lời chúc dành cho bạn').trim();
+  const cardText = String(wish && wish.text || '').trim();
+  const cardClosing = String(wish && wish.closing || 'Mong bạn nở rộ theo cách của mình.').trim();
+  if (!cardText) throw new Error('Lá thư chưa có nội dung để lưu.');
+
+  if (document.fonts && document.fonts.ready) {
+    await Promise.race([
+      document.fonts.ready.catch(() => undefined),
+      new Promise(resolve => setTimeout(resolve, 1800))
+    ]);
+  }
+
+  const cardCanvas = document.createElement('canvas');
+  if (typeof disposed !== 'undefined' && disposed) throw new Error('Khu vườn đã khép lại.');
+  cardCanvas.width = 1200;
+  cardCanvas.height = 1600;
+  const cardContext = cardCanvas.getContext('2d');
+  if (!cardContext) throw new Error('Trình duyệt không hỗ trợ tạo thiệp.');
+  const cardWidth = cardCanvas.width;
+  const cardHeight = cardCanvas.height;
+  const cardGold = '#c7ac7d';
+  const cardCream = '#f2e7d6';
+  const cardSerif = '"Cormorant Garamond", Georgia, serif';
+  const cardSans = '"Be Vietnam Pro", Arial, sans-serif';
+
+  const cardWrap = (value, maxWidth) => {
+    const paragraphs = value.split(/\n/);
+    const lines = [];
+    for (const paragraph of paragraphs) {
+      const words = paragraph.trim().split(/\s+/).filter(Boolean);
+      if (!words.length) { lines.push(''); continue; }
+      let currentLine = '';
+      for (const word of words) {
+        const candidate = currentLine ? currentLine + ' ' + word : word;
+        if (currentLine && cardContext.measureText(candidate).width > maxWidth) {
+          lines.push(currentLine);
+          currentLine = word;
+        } else currentLine = candidate;
+      }
+      if (currentLine) lines.push(currentLine);
+    }
+    return lines;
+  };
+
+  const cardTrackedText = (value, x, y, spacing) => {
+    const glyphs = Array.from(value);
+    const textWidth = glyphs.reduce((sum, glyph) => sum + cardContext.measureText(glyph).width, 0) + Math.max(0, glyphs.length - 1) * spacing;
+    let cursorX = x - textWidth / 2;
+    cardContext.save();
+    cardContext.textAlign = 'left';
+    for (const glyph of glyphs) {
+      cardContext.fillText(glyph, cursorX, y);
+      cursorX += cardContext.measureText(glyph).width + spacing;
+    }
+    cardContext.restore();
+  };
+
+  const cardLeaf = (x, y, angle, length, leafWidth, opacity) => {
+    cardContext.save();
+    cardContext.translate(x, y);
+    cardContext.rotate(angle);
+    cardContext.globalAlpha = opacity;
+    cardContext.beginPath();
+    cardContext.moveTo(0, 0);
+    cardContext.bezierCurveTo(-leafWidth, -length * 0.37, -leafWidth * 0.6, -length * 0.75, 0, -length);
+    cardContext.bezierCurveTo(leafWidth * 0.9, -length * 0.71, leafWidth * 0.75, -length * 0.25, 0, 0);
+    const leafGradient = cardContext.createLinearGradient(0, 0, 0, -length);
+    leafGradient.addColorStop(0, '#87956b');
+    leafGradient.addColorStop(1, cardGold);
+    cardContext.fillStyle = leafGradient;
+    cardContext.fill();
+    cardContext.lineWidth = 1.1;
+    cardContext.strokeStyle = cardGold;
+    cardContext.stroke();
+    cardContext.beginPath();
+    cardContext.moveTo(0, -4);
+    cardContext.quadraticCurveTo(-leafWidth * 0.12, -length * 0.6, 0, -length * 0.94);
+    cardContext.stroke();
+    cardContext.restore();
+  };
+
+  const cardFlower = (x, y, radius, turn, opacity) => {
+    cardContext.save();
+    cardContext.translate(x, y);
+    cardContext.rotate(turn);
+    cardContext.globalAlpha = opacity;
+    for (let layer = 0; layer < 2; layer++) {
+      const petalCount = layer === 0 ? 9 : 7;
+      const petalLength = radius * (layer === 0 ? 1 : 0.69);
+      const petalWidth = petalLength * 0.43;
+      for (let petalIndex = 0; petalIndex < petalCount; petalIndex++) {
+        cardContext.save();
+        cardContext.rotate(petalIndex * Math.PI * 2 / petalCount + layer * 0.23);
+        cardContext.beginPath();
+        cardContext.moveTo(-3, 7);
+        cardContext.bezierCurveTo(-petalWidth, -petalLength * 0.24, -petalWidth * 1.08, -petalLength * 0.9, 0, -petalLength);
+        cardContext.bezierCurveTo(petalWidth * 1.12, -petalLength * 0.91, petalWidth * 0.9, -petalLength * 0.2, 3, 7);
+        const petalGradient = cardContext.createLinearGradient(0, 4, 0, -petalLength);
+        petalGradient.addColorStop(0, 'rgba(199,172,125,0.06)');
+        petalGradient.addColorStop(0.6, 'rgba(221,199,158,0.22)');
+        petalGradient.addColorStop(1, 'rgba(242,231,214,0.4)');
+        cardContext.fillStyle = petalGradient;
+        cardContext.fill();
+        cardContext.strokeStyle = 'rgba(226,202,161,0.7)';
+        cardContext.lineWidth = 1.3;
+        cardContext.stroke();
+        cardContext.beginPath();
+        cardContext.moveTo(0, -8);
+        cardContext.quadraticCurveTo(petalWidth * 0.12, -petalLength * 0.4, 0, -petalLength * 0.83);
+        cardContext.strokeStyle = 'rgba(226,202,161,0.23)';
+        cardContext.stroke();
+        cardContext.restore();
+      }
+    }
+    cardContext.fillStyle = cardGold;
+    for (let seedIndex = 0; seedIndex < 24; seedIndex++) {
+      const seedAngle = seedIndex * 2.399963;
+      const seedRadius = Math.sqrt(seedIndex) * radius * 0.027;
+      cardContext.beginPath();
+      cardContext.arc(Math.cos(seedAngle) * seedRadius, Math.sin(seedAngle) * seedRadius, radius * 0.014, 0, Math.PI * 2);
+      cardContext.fill();
+    }
+    cardContext.restore();
+  };
+
+  const cardBackground = cardContext.createLinearGradient(0, 0, cardWidth, cardHeight);
+  cardBackground.addColorStop(0, '#101b18');
+  cardBackground.addColorStop(0.48, '#1d3029');
+  cardBackground.addColorStop(1, '#0d1916');
+  cardContext.fillStyle = cardBackground;
+  cardContext.fillRect(0, 0, cardWidth, cardHeight);
+  const cardGlow = cardContext.createRadialGradient(690, 510, 0, 690, 510, 900);
+  cardGlow.addColorStop(0, 'rgba(199,172,125,0.12)');
+  cardGlow.addColorStop(1, 'rgba(199,172,125,0)');
+  cardContext.fillStyle = cardGlow;
+  cardContext.fillRect(0, 0, cardWidth, cardHeight);
+
+  let cardSeed = 20102026;
+  const cardRandom = () => {
+    cardSeed = (Math.imul(cardSeed, 1664525) + 1013904223) >>> 0;
+    return cardSeed / 4294967296;
+  };
+  for (let grainIndex = 0; grainIndex < 8500; grainIndex++) {
+    cardContext.fillStyle = 'rgba(242,231,214,' + (0.015 + cardRandom() * 0.035) + ')';
+    cardContext.fillRect(cardRandom() * cardWidth, cardRandom() * cardHeight, 1, 1);
+  }
+
+  cardContext.strokeStyle = 'rgba(199,172,125,0.5)';
+  cardContext.lineWidth = 1.2;
+  cardContext.strokeRect(65, 65, 1070, 1470);
+  cardContext.strokeStyle = 'rgba(199,172,125,0.17)';
+  cardContext.strokeRect(79, 79, 1042, 1442);
+
+  cardContext.save();
+  cardContext.strokeStyle = 'rgba(199,172,125,0.5)';
+  cardContext.lineWidth = 1.6;
+  cardContext.beginPath();
+  cardContext.moveTo(105, 1503);
+  cardContext.bezierCurveTo(172, 1382, 135, 1246, 235, 1134);
+  cardContext.moveTo(1090, 108);
+  cardContext.bezierCurveTo(1017, 230, 1096, 383, 971, 491);
+  cardContext.stroke();
+  cardContext.restore();
+  cardLeaf(144, 1425, -0.94, 117, 25, 0.55);
+  cardLeaf(157, 1364, 0.78, 94, 20, 0.4);
+  cardLeaf(171, 1275, -0.92, 101, 22, 0.43);
+  cardLeaf(1048, 200, 2.33, 99, 22, 0.45);
+  cardLeaf(1047, 296, 4.03, 103, 21, 0.46);
+  cardLeaf(1015, 421, 2.38, 91, 19, 0.33);
+  cardFlower(185, 1250, 108, -0.26, 0.76);
+  cardFlower(1023, 371, 89, 0.3, 0.57);
+  cardFlower(1029, 1301, 44, 0.1, 0.38);
+
+  cardContext.textAlign = 'center';
+  cardContext.textBaseline = 'alphabetic';
+  cardContext.fillStyle = cardGold;
+  cardContext.font = '400 17px ' + cardSans;
+  cardTrackedText('MỘT LÁ THƯ TỪ VƯỜN THỨC GIẤC', 600, 161, 3.7);
+  cardContext.fillStyle = cardCream;
+  cardContext.font = '400 124px ' + cardSerif;
+  cardContext.fillText('20 / 10', 600, 291);
+  cardContext.fillStyle = 'rgba(242,231,214,0.76)';
+  cardContext.font = '300 24px ' + cardSans;
+  cardContext.fillText('Ngày Phụ nữ Việt Nam', 600, 344);
+
+  cardContext.strokeStyle = 'rgba(199,172,125,0.5)';
+  cardContext.lineWidth = 1;
+  cardContext.beginPath();
+  cardContext.moveTo(474, 399);
+  cardContext.lineTo(572, 399);
+  cardContext.moveTo(628, 399);
+  cardContext.lineTo(726, 399);
+  cardContext.stroke();
+  cardContext.save();
+  cardContext.translate(600, 399);
+  cardContext.rotate(Math.PI / 4);
+  cardContext.strokeRect(-5, -5, 10, 10);
+  cardContext.restore();
+
+  cardContext.fillStyle = cardGold;
+  cardContext.font = '400 17px ' + cardSans;
+  cardTrackedText('DÀNH CHO BẠN', 600, 483, 4.2);
+  let cardTitleSize = 100;
+  do {
+    cardContext.font = '500 ' + cardTitleSize + 'px ' + cardSerif;
+    if (cardContext.measureText(cardTitle).width <= 850 || cardTitleSize <= 54) break;
+    cardTitleSize -= 2;
+  } while (true);
+  cardContext.fillStyle = cardCream;
+  cardContext.fillText(cardTitle, 600, 594, 880);
+
+  let cardBodySize = 34;
+  let cardBodyLines = [];
+  let cardLineHeight = 57;
+  do {
+    cardContext.font = '300 ' + cardBodySize + 'px ' + cardSans;
+    cardBodyLines = cardWrap(cardText, 800);
+    cardLineHeight = cardBodySize * 1.68;
+    if (cardBodyLines.length * cardLineHeight <= 420 || cardBodySize <= 22) break;
+    cardBodySize -= 1;
+  } while (true);
+  const cardBodyTop = 705 + Math.max(0, (340 - cardBodyLines.length * cardLineHeight) * 0.35);
+  cardContext.fillStyle = 'rgba(242,231,214,0.94)';
+  for (let lineIndex = 0; lineIndex < cardBodyLines.length; lineIndex++) {
+    cardContext.fillText(cardBodyLines[lineIndex], 600, cardBodyTop + lineIndex * cardLineHeight);
+  }
+
+  cardContext.font = 'italic 400 37px ' + cardSerif;
+  const cardClosingLines = cardWrap(cardClosing, 755);
+  cardContext.fillStyle = cardGold;
+  const cardClosingTop = Math.max(1167, cardBodyTop + cardBodyLines.length * cardLineHeight + 48);
+  for (let lineIndex = 0; lineIndex < cardClosingLines.length; lineIndex++) {
+    cardContext.fillText(cardClosingLines[lineIndex], 600, cardClosingTop + lineIndex * 43);
+  }
+
+  cardContext.strokeStyle = 'rgba(199,172,125,0.35)';
+  cardContext.beginPath();
+  cardContext.moveTo(480, 1376);
+  cardContext.lineTo(720, 1376);
+  cardContext.stroke();
+  cardContext.fillStyle = cardCream;
+  cardContext.font = '400 31px ' + cardSerif;
+  cardContext.fillText('Vườn thức giấc', 600, 1431);
+  cardContext.fillStyle = 'rgba(242,231,214,0.6)';
+  cardContext.font = '300 17px ' + cardSans;
+  cardContext.fillText('Chúc mừng Ngày Phụ nữ Việt Nam', 600, 1467);
+
+  const cardFilenameTitle = cardTitle.normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/đ/g, 'd').replace(/Đ/g, 'D').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '') || 'loi-chuc';
+  const cardFilename = 'vuon-thuc-giac-20-10-' + cardFilenameTitle + '.png';
+  const cardBlob = await new Promise(resolve => {
+    if (typeof cardCanvas.toBlob !== 'function') { resolve(null); return; }
+    try { cardCanvas.toBlob(resolve, 'image/png'); } catch (_) { resolve(null); }
+  });
+  const cardDownloadAnchor = document.createElement('a');
+  if (typeof disposed !== 'undefined' && disposed) throw new Error('Khu vườn đã khép lại.');
+  let cardDownloadUrl = '';
+  try {
+    cardDownloadUrl = cardBlob ? URL.createObjectURL(cardBlob) : cardCanvas.toDataURL('image/png');
+    if (!cardDownloadUrl || cardDownloadUrl === 'data:,') throw new Error('Không thể tạo tệp ảnh.');
+    cardDownloadAnchor.href = cardDownloadUrl;
+    cardDownloadAnchor.download = cardFilename;
+    cardDownloadAnchor.style.display = 'none';
+    document.body.appendChild(cardDownloadAnchor);
+    cardDownloadAnchor.click();
+  } finally {
+    cardDownloadAnchor.remove();
+    if (cardBlob && cardDownloadUrl) setTimeout(() => URL.revokeObjectURL(cardDownloadUrl), 30000);
+  }
+}
+
+// Story state is deliberately independent of the WebGL renderer.
+const wishes=[
+ {id:'binh-an',title:'Bình an',text:'Mong bạn có những ngày lòng thật nhẹ, những giấc ngủ thật yên và những khoảng nghỉ đủ đầy. Giữa bao điều đang tiếp diễn, luôn có một góc bình an dành cho bạn.',closing:'Gửi bạn một khoảng trời thật yên.',note:'Bình an vừa nở trong khu vườn.',tone:396},
+ {id:'niem-vui',title:'Niềm vui',text:'Mong mỗi ngày đều có điều khiến bạn mỉm cười: một cuộc gặp dễ thương, một tin vui bất ngờ, hay một buổi chiều được làm điều mình thích. Chúc niềm vui tìm đến bạn bằng thật nhiều cách.',closing:'Gửi bạn những ngày lấp lánh niềm vui.',note:'Một chút niềm vui vừa ở lại.',tone:528},
+ {id:'yeu-thuong',title:'Yêu thương',text:'Mong bạn luôn được lắng nghe, được trân trọng và nhận những quan tâm chân thành. Chúc những yêu thương bạn trao đi cũng tìm đường trở về, dịu dàng và đủ đầy.',closing:'Gửi bạn thật nhiều yêu thương.',note:'Yêu thương đang lan qua những cánh hoa.',tone:440},
+ {id:'tu-do',title:'Tự do',text:'Mong bạn được chọn điều mình yêu, nói điều mình nghĩ và bước đi theo nhịp của mình. Chúc bạn có thật nhiều khoảng trời để sống, khám phá và nở rộ theo cách riêng.',closing:'Gửi bạn một khoảng trời rộng mở.',note:'Một cánh hoa vừa tìm thấy bầu trời.',tone:587.33},
+ {id:'uoc-mo',title:'Ước mơ',text:'Mong những điều bạn ấp ủ có ngày thành hình. Chúc mỗi bước nhỏ đều đưa bạn gần hơn với điều mình mong muốn, và trên hành trình ấy luôn có niềm tin cùng những người đồng hành.',closing:'Gửi bạn niềm tin vào những ngày phía trước.',note:'Một ước mơ nhỏ vừa hé nở.',tone:659.25}
+];
+const readWishes=new Set(),wishDialog=$('#wish-dialog'),storyCanvas=$('#story-canvas'),storyCtx=storyCanvas.getContext('2d');
+let activeWish=-1,lastWish=0,letterOpener=null,storyEffect=null,returnPetal=null,storyScale=1,flowerFocus=0,finaleIgnited=false,finaleSources=[];
+const cardChoice=$('#card-choice');
+function sizeStory(){storyScale=Math.min(devicePixelRatio||1,1.5);storyCanvas.width=Math.round(W*storyScale);storyCanvas.height=Math.round(H*storyScale);}
+function clearStory(){storyEffect=null;returnPetal=null;if(storyCtx)storyCtx.clearRect(0,0,storyCanvas.width,storyCanvas.height);}
+function updateMemory(){
+ bloomButtons.forEach((b,i)=>{b.classList.toggle('is-read',readWishes.has(i));b.setAttribute('aria-label','Mở thư '+wishes[i].title+(readWishes.has(i)?', đã khám phá':''));});
+ $$('#garden-heart .heart-petal').forEach((p,i)=>p.classList.toggle('received',readWishes.has(i)));
+ $('#garden-heart').classList.toggle('awakened',readWishes.size>0);
+}
+function openLetter(i){
+ if(wishDialog.open||i<0||i>=wishes.length)return;
+ stopAuto();skipIntro();activeWish=i;lastWish=i;letterOpener=bloomButtons[i];
+ const w=wishes[i],q=flowers[i].screen||{x:W/2,y:H/2};
+ $('#letter-title').textContent=w.title;$('#letter-text').textContent=w.text;$('#letter-signature').textContent=w.closing;$('#letter-status').textContent='';cardChoice.value=String(i);
+ wishDialog.style.setProperty('--flight-x',(q.x-W/2)+'px');wishDialog.style.setProperty('--flight-y',(q.y-H/2)+'px');
+ wishDialog.classList.toggle('instant',reduced||paused);root.classList.add('letter-open');document.documentElement.classList.add('letter-scroll-lock');
+ flowers[i].energy=1.4;audio.chime(w.tone,3);wishDialog.showModal();wishDialog.scrollTop=0;$('.letter-sheet').scrollTop=0;
+ $('#letter-close').focus({preventScroll:true});invalidate();
+}
+function finishLetter(){
+ if(!wishDialog.open)return;
+ const i=activeWish;wishDialog.close();root.classList.remove('letter-open');document.documentElement.classList.remove('letter-scroll-lock');activeWish=-1;
+ if(i>=0){
+  readWishes.add(i);updateMemory();$('#discovery-word').textContent=wishes[i].note;$('.discovery-copy p').textContent='Cho mỗi lời chúc một chút thời gian ở lại.';
+  const q=flowers[i].screen||{x:W/2,y:H/2};
+  if(!reduced&&!paused){returnPetal={i,t:0,from:{x:W*.5,y:H*.48},to:{x:q.x,y:q.y}};}else flowers[i].energy=1;
+  $('#announcement').textContent=wishes[i].title+' đã ở lại trong khu vườn.';
+ }
+ if(sceneIndex===1&&letterOpener)letterOpener.focus({preventScroll:true});
+ invalidate();
+}
+function drawStoryPetal(x,y,r,angle,alpha=1){
+ const c=storyCtx;c.save();c.translate(x,y);c.rotate(angle);c.globalAlpha=clamp(alpha);const g=c.createLinearGradient(-r*.5,r*.5,r,-r);g.addColorStop(0,'#9f7c56');g.addColorStop(.45,'#ddc28e');g.addColorStop(1,'#fff2cc');c.fillStyle=g;c.beginPath();c.moveTo(0,r*.65);c.bezierCurveTo(-r*1.1,r*.2,-r*.75,-r*.65,r*.55,-r);c.bezierCurveTo(r*.85,-r*.1,r*.4,r*.55,0,r*.65);c.fill();c.strokeStyle='#fff4cf88';c.lineWidth=.7;c.beginPath();c.moveTo(0,r*.6);c.quadraticCurveTo(-r*.1,-r*.15,r*.5,-r*.93);c.stroke();c.restore();
+}
+function renderStory(dt){
+ if(!storyCtx)return;const c=storyCtx;c.setTransform(storyScale,0,0,storyScale,0,0);c.clearRect(0,0,W,H);
+ if(reduced||paused){storyEffect=null;returnPetal=null;return;}
+ if(returnPetal){
+  const p=returnPetal;p.t+=dt;const t=clamp(p.t/1.05),e=smooth(t),q=flowers[p.i].screen||p.to;
+  const x=mix(p.from.x,q.x,e),y=mix(p.from.y,q.y,e)-Math.sin(t*Math.PI)*H*.16;
+  for(let k=5;k>=1;k--){const v=clamp(t-k*.022),u=smooth(v);drawStoryPetal(mix(p.from.x,q.x,u),mix(p.from.y,q.y,u)-Math.sin(v*Math.PI)*H*.16,(mobile?11:16)*(1-k*.08),t*3-k*.09,.11*(1-k/7));}
+  drawStoryPetal(x,y,(mobile?16:23)*(1-t*.35),-.7+t*3,Math.min(1,(1-t)*7));
+  if(t>=1){flowers[p.i].energy=1.7;burst(flowers[p.i],p.i===1?22:12);storyEffect={i:p.i,x:q.x,y:q.y,t:0};returnPetal=null;audio.chime(wishes[p.i].tone,2);}
+ }
+ if(storyEffect&&sceneIndex===1){
+  const e=storyEffect;e.t+=dt;const v=e.t,a=clamp((3-v)/1.5),r=Math.min(W,H);
+  if(v<3){
+   c.save();c.lineWidth=.8;c.strokeStyle='#e4ce9c';
+   if(e.i===0||e.i===2){for(let k=0;k<3;k++){const u=clamp((v-k*.28)/2);c.globalAlpha=(1-u)*.22*a;c.beginPath();c.ellipse(e.x,e.y+10,u*r*(e.i===0?.6:.30),u*r*(e.i===0?.13:.28),e.i===2?v*.25:0,0,TAU);c.stroke();}}
+   for(let k=0;k<(quality===0?10:20);k++){
+    const phase=k*2.39996,travel=v*(e.i===3?40:18),rad=(17+k*2)*Math.sin(Math.min(v,1.57));
+    const x=e.x+Math.cos(phase+v*.4)*rad+Math.sin(v+k)*9,y=e.y+Math.sin(phase+v*.4)*rad-travel*(e.i===4?1.4:1);
+    if(e.i===3){drawStoryPetal(x,y,4+k%3,v+k,.45*a);}else{c.globalAlpha=(.25+.3*Math.sin(v*3+k)**2)*a;c.fillStyle='#f6dfaa';c.beginPath();c.arc(x,y,e.i===1?1.3:1,0,TAU);c.fill();}
+   }
+   c.restore();
+  }else storyEffect=null;
+ }
+ if(finalStarted&&finalTime<2.9){
+  const entries=finaleSources.length?finaleSources:flowers.slice(0,5).map(f=>({x:f.screen.x,y:f.screen.y}));
+  entries.forEach((s,i)=>{const t=clamp((finalTime-.2-i*.065)/1.5),e=ease(t);if(t>0&&t<1){const a=i*TAU/entries.length,x=mix(s.x,W*.5,e)+Math.sin(t*Math.PI)*Math.cos(a)*W*.12,y=mix(s.y,H*.49,e)-Math.sin(t*Math.PI)*H*.2;drawStoryPetal(x,y,mobile?13:20,a+t*4,Math.min(t*8,(1-t)*8));}});
+  if(finalTime>.9){const u=clamp((finalTime-.9)/1.15);for(let i=0;i<5;i++)drawStoryPetal(W*.5+Math.cos(i*TAU/5)*u*20,H*.49+Math.sin(i*TAU/5)*u*20,(mobile?35:54)*Math.sin(u*Math.PI),i*TAU/5+1,Math.sin(u*Math.PI)*.9);}
+ }
+}
+function startStoryFinale(){finaleIgnited=false;returnPetal=null;storyEffect=null;finaleSources=[...readWishes].map(i=>({x:flowers[i].screen.x,y:flowers[i].screen.y}));if(!finaleSources.length)finaleSources=flowers.slice(0,5).map(f=>({x:f.screen.x,y:f.screen.y}));}
+async function saveSelectedCard(button,status){
+ if(button.disabled)return;button.disabled=true;status.textContent='Đang gói một lời chúc…';
+ try{await downloadWishCard(wishes[Number(cardChoice.value)||0]);if(!disposed)status.textContent='Thiệp đã sẵn sàng trong mục tải xuống.';}catch{if(!disposed)status.textContent='Chưa thể lưu thiệp. Bạn hãy thử lại nhé.';}finally{if(!disposed)button.disabled=false;}
+}
+for(let i=0;i<bloomButtons.length;i++)listen(bloomButtons[i],'click',()=>openLetter(i));
+listen($('#letter-close'),'click',finishLetter);listen($('#letter-return'),'click',finishLetter);
+listen(wishDialog,'cancel',e=>{e.preventDefault();finishLetter();});
+listen(wishDialog,'click',e=>{if(e.target!==wishDialog)return;const r=wishDialog.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)finishLetter();});
+listen($('#bloom-garden'),'click',()=>goTo(2));
+listen($('#letter-save'),'click',()=>saveSelectedCard($('#letter-save'),$('#letter-status')));
+listen($('#save-card'),'click',()=>saveSelectedCard($('#save-card'),$('#card-status')));
+listen(cardChoice,'change',()=>{$('#card-status').textContent='';});
+updateMemory();
 
 listen(window,'resize',resize,{passive:true});
 listen(window,'scroll',()=>{if(autoPlaying)return;targetScroll=scrollY;if(targetScroll>20&&introTime<4.6)skipIntro();invalidate();},{passive:true});
@@ -589,22 +987,20 @@ listen(window,'pointermove',e=>{if(e.pointerType==='touch'&&!e.isPrimary)return;
 listen(document,'pointerleave',()=>{pointer.tx=pointer.ty=0;pointer.active=false;});
 listen(window,'pointerup',e=>{if(e.pointerType==='touch'){pointer.tx=pointer.ty=0;pointer.active=false;}},{passive:true});
 listen(document,'visibilitychange',()=>{if(document.hidden){cancelAnimationFrame(raf);raf=0;audio.ctx?.suspend().catch(()=>{});}else{last=0;if(audio.enabled)audio.ctx?.resume().catch(()=>{});invalidate();}});
-listen($('#skip-intro'),'click',()=>{stopAuto();skipIntro();$('#continue').focus({preventScroll:true});});
-listen($('#continue'),'click',()=>{if(sceneIndex===2)restartAuto();else goTo(sceneIndex===0?1:2);});
+listen($('#skip-intro'),'click',()=>{goTo(1);$('#wish-title').setAttribute('tabindex','-1');$('#wish-title').focus({preventScroll:true});});
+listen($('#continue'),'click',()=>goTo(sceneIndex===1?2:1));
 for(let i=0;i<sceneLinks.length;i++)listen(sceneLinks[i],'click',e=>{e.preventDefault();goTo(i);});
 listen($('.wordmark'),'click',e=>{e.preventDefault();goTo(0);});
 listen($('.skip-link'),'click',e=>{e.preventDefault();goTo(1);$('#wish-title').setAttribute('tabindex','-1');$('#wish-title').focus({preventScroll:true});});
-let wishTimer=0;
-for(let i=0;i<bloomButtons.length;i++)listen(bloomButtons[i],'click',()=>{flowers[i].energy=1.3;burst(flowers[i],quality>1?18:11);audio.chime([440,528,587.33][i],3);const box=$('.discovery-copy');box.classList.add('replacing');clearTimeout(wishTimer);timers.delete(wishTimer);wishTimer=later(()=>{$('#discovery-word').textContent=['Vui vẻ.','Bình an.','Được yêu thương.'][i];box.classList.remove('replacing');box.classList.add('changed');},reduced?0:180);invalidate();});
 listen($('#light-toggle'),'click',()=>{lightTarget=lightTarget?0:1;const b=$('#light-toggle');b.setAttribute('aria-pressed',String(!!lightTarget));b.setAttribute('aria-label',lightTarget?'Đổi ánh sáng khu vườn sang sương sớm':'Đổi ánh sáng khu vườn sang nắng ấm');b.lastElementChild.textContent=lightTarget?'Nắng ấm':'Sương sớm';audio.chime(lightTarget?528:396,2);invalidate();});
-listen($('#motion-toggle'),'click',()=>{paused=!paused;const b=$('#motion-toggle');b.setAttribute('aria-pressed',String(paused));b.setAttribute('aria-label',paused?'Tiếp tục chuyển động':'Tạm dừng chuyển động');b.title=b.getAttribute('aria-label');particles.length=0;if(paused){clearCinema();root.classList.remove('cinema-final');introTime=5;if(finalStarted)finalTime=5;replayRunning=false;replayButton.disabled=false;}last=0;invalidate();});
+listen($('#motion-toggle'),'click',()=>{paused=!paused;root.classList.toggle('motion-paused',paused);if(paused){stopAuto();clearStory();if(sceneIndex===0)goTo(1);}const b=$('#motion-toggle');b.setAttribute('aria-pressed',String(paused));b.setAttribute('aria-label',paused?'Tiếp tục chuyển động':'Tạm dừng chuyển động');b.title=b.getAttribute('aria-label');particles.length=0;if(paused){clearCinema();root.classList.remove('cinema-final');introTime=5;if(finalStarted)finalTime=5;replayRunning=false;replayButton.disabled=false;}last=0;invalidate();});
 listen($('#sound-toggle'),'click',async()=>{const enabled=await audio.toggle();if(disposed)return;const b=$('#sound-toggle');b.setAttribute('aria-pressed',String(enabled));b.setAttribute('aria-label',enabled?'Tắt âm thanh':'Bật âm thanh');b.title=b.getAttribute('aria-label');if(!audio.ctx)$('#announcement').textContent='Trình duyệt này chưa hỗ trợ âm thanh. Bạn vẫn có thể tận hưởng khu vườn.';});
-listen(replayButton,'click',()=>{restartAuto();});
-function motionChanged(e){reduced=e.matches;stopAuto();particles.length=0;clearCinema();root.classList.remove('cinema-final','cinema-intro');introTime=5;finalTime=5;replayRunning=false;replayButton.disabled=false;last=0;invalidate();}
+listen(replayButton,'click',()=>goTo(1));
+function motionChanged(e){reduced=e.matches;stopAuto();clearStory();if(reduced&&sceneIndex===0)goTo(1);particles.length=0;clearCinema();root.classList.remove('cinema-final','cinema-intro');introTime=5;finalTime=5;replayRunning=false;replayButton.disabled=false;last=0;invalidate();}
 if(motionQuery.addEventListener)listen(motionQuery,'change',motionChanged);else{motionQuery.addListener(motionChanged);disposers.push(()=>motionQuery.removeListener(motionChanged));}
 listen(canvas,'webglcontextlost',e=>{e.preventDefault();useFallback(true);invalidate();});
 listen(canvas,'webglcontextrestored',()=>{try{gpu=createRenderer();contextLost=false;canvas.hidden=false;fallbackCanvas.hidden=true;resize();}catch{useFallback(true);}invalidate();});
-function destroy(){if(disposed)return;disposed=true;cancelAnimationFrame(raf);for(const id of timers)clearTimeout(id);timers.clear();for(const off of disposers)off();gpu?.dispose();fallback?.dispose();audio.dispose();particles.length=0;clearCinema();}
+function destroy(){if(disposed)return;disposed=true;cancelAnimationFrame(raf);for(const id of timers)clearTimeout(id);timers.clear();for(const off of disposers)off();gpu?.dispose();fallback?.dispose();audio.dispose();particles.length=0;clearCinema();clearStory();if(wishDialog.open)wishDialog.close();root.classList.remove('letter-open');document.documentElement.classList.remove('letter-scroll-lock');}
 listen(window,'pagehide',e=>{if(e.persisted){cancelAnimationFrame(raf);raf=0;audio.ctx?.suspend().catch(()=>{});}else destroy();});
 listen(window,'pageshow',e=>{if(e.persisted){last=0;resize();if(audio.enabled)audio.ctx?.resume().catch(()=>{});invalidate();}});
 try{gpu=createRenderer();}catch(error){console.warn('Botanical renderer: switching to compatible mode.',error.message);useFallback(true);}
@@ -612,7 +1008,7 @@ try{gpu=createRenderer();}catch(error){console.warn('Botanical renderer: switchi
 try{history.scrollRestoration='manual';}catch{}
 resize();restartAuto();
 // Public teardown hook for embedding in a host that mounts / removes this experience.
-window.GardenExperience={destroy,replay(){restartAuto();},getDiagnostics(){return{autoplay:autoPlaying,autoplaySeconds:+autoClock.toFixed(2),renderer:contextLost?'canvas2d':'webgl',quality,particles:particles.length,reducedMotion:reduced,paused,flowers:flowers.length,scene:sceneIndex+1,meshTriangles:geometry.petals.indices.length/3};}};
+window.GardenExperience={destroy,replay(){restartAuto();},getDiagnostics(){return{autoplay:autoPlaying,autoplaySeconds:+autoClock.toFixed(2),renderer:contextLost?'canvas2d':'webgl',quality,particles:particles.length,reducedMotion:reduced,paused,flowers:flowers.length,scene:sceneIndex+1,letters:readWishes.size,activeLetter:activeWish,letterOpen:wishDialog.open,meshTriangles:geometry.petals.indices.length/3};}};
 })();
 </script>
 </body>
